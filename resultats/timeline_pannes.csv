@@ -1,0 +1,79 @@
+t_s,hauteur,phase
+0.0,39041,nominal
+0.52,39042,nominal
+1.02,39042,nominal
+1.53,39043,nominal
+2.04,39043,nominal
+2.54,39043,nominal
+3.05,39044,nominal
+3.55,39044,nominal
+4.06,39045,nominal
+4.56,39045,nominal
+15.54,39053,f-1 panne
+16.05,39053,f-1 panne
+16.55,39053,f-1 panne
+17.06,39053,f-1 panne
+17.56,39053,f-1 panne
+18.07,39053,f-1 panne
+18.57,39053,f-1 panne
+19.08,39053,f-1 panne
+19.58,39053,f-1 panne
+20.09,39054,f-1 panne
+20.59,39054,f-1 panne
+21.1,39055,f-1 panne
+32.07,39059,f+1 pannes
+32.57,39059,f+1 pannes
+33.08,39059,f+1 pannes
+33.58,39059,f+1 pannes
+34.09,39059,f+1 pannes
+34.59,39059,f+1 pannes
+35.1,39059,f+1 pannes
+35.6,39059,f+1 pannes
+36.11,39059,f+1 pannes
+36.61,39059,f+1 pannes
+37.12,39059,f+1 pannes
+37.62,39059,f+1 pannes
+38.13,39059,f+1 pannes
+38.63,39059,f+1 pannes
+39.14,39059,f+1 pannes
+39.64,39059,f+1 pannes
+40.99,39059,reprise
+41.49,39059,reprise
+42.0,39059,reprise
+42.5,39059,reprise
+43.01,39059,reprise
+43.51,39059,reprise
+44.02,39059,reprise
+44.52,39059,reprise
+45.03,39059,reprise
+45.53,39060,reprise
+46.04,39060,reprise
+46.54,39060,reprise
+47.05,39061,reprise
+47.55,39061,reprise
+48.06,39062,reprise
+48.56,39062,reprise
+49.07,39062,reprise
+49.57,39063,reprise
+50.08,39063,reprise
+50.58,39063,reprise
+51.09,39064,reprise
+51.59,39064,reprise
+52.1,39065,reprise
+52.6,39065,reprise
+53.11,39065,reprise
+53.61,39066,reprise
+54.12,39066,reprise
+54.62,39067,reprise
+55.13,39067,reprise
+55.63,39067,reprise
+56.14,39068,reprise
+56.64,39068,reprise
+57.15,39069,reprise
+57.65,39069,reprise
+58.16,39069,reprise
+58.66,39070,reprise
+59.17,39070,reprise
+59.67,39070,reprise
+60.18,39071,reprise
+60.68,39071,reprise

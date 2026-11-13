@@ -1,0 +1,7 @@
+scenario,n,panne,nb_essais,latence_moy_ms,latence_sd_ms,latence_ic95_ms,p95_ms,debit_moy_tx_s,debit_sd_tx_s,tx_ok,tx_total,statut
+S1,4,0,3,1303.0,3.6,9.0,1317.0,15.3,0.0,600,600,operationnel
+S2,4,0,3,1364.7,11.0,27.3,1417.3,14.57,0.06,600,600,operationnel
+S3,7,0,3,1403.3,11.6,28.8,1503.0,14.1,0.1,600,600,operationnel
+S3,10,0,3,1401.0,6.6,16.3,1525.7,14.1,0.0,600,600,operationnel
+S4,4,1,3,2257.7,91.4,227.0,5698.0,5.93,0.06,150,150,operationnel
+S4,4,2,2,,,,,0.0,0.0,0,9,bloque

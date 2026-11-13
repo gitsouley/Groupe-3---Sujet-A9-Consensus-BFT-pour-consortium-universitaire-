@@ -1,0 +1,73 @@
+name: Verification et compilation
+
+on:
+  push:
+    branches: [main, master]
+    tags: ["*"]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  verification:
+    name: Donnees, figures et tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Installer les dependances
+        run: pip install -r code/requirements.txt
+      - name: Regenerer les figures
+        run: bash code/reproduire.sh
+      - name: Verifier le depot
+        run: python outils/verifier_depot.py --etape rendu-article --verbeux
+      - name: Tests unitaires
+        run: python -m unittest discover -s code/tests -v
+      - name: Conserver les figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: figures
+          path: resultats/figures/
+
+  latex:
+    name: Compilation LaTeX
+    needs: verification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Article IEEE
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: article
+          root_file: article.tex
+      - name: Diapositives Beamer
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: animation
+          root_file: animation.tex
+      - name: Conserver les PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf
+          path: |
+            article/article.pdf
+            animation/animation.pdf
+
+  release:
+    name: Publication du jalon
+    if: startsWith(github.ref, 'refs/tags/version-soumission')
+    needs: [verification, latex]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pdf
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            article/article.pdf
+            animation/animation.pdf
+          generate_release_notes: true

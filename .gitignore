@@ -1,0 +1,33 @@
+# Secrets et clés de validation
+testnet/
+*.key
+*.pem
+.env
+.env.*
+!.env.example
+
+# Environnements Python
+.venv/
+venv/
+env/
+.environnement/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Sorties LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+# Divers
+.DS_Store
+*.swp

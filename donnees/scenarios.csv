@@ -1,0 +1,7 @@
+scenario,n,retard,panne,nb_essais,charge_latence,charge_debit,description
+S1,4,non,0,3,20,200,Reference locale sans latence injectee
+S2,4,oui,0,3,20,200,Latence UEMOA simulee
+S3,7,oui,0,3,20,200,Sept validateurs avec latence UEMOA
+S3,10,oui,0,3,20,200,Dix validateurs avec latence UEMOA
+S4,4,oui,1,3,10,50,Un validateur arrete (f=1)
+S4,4,oui,2,2,10,10,Deux validateurs arretes (f+1=2)

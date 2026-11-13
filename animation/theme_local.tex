@@ -1,0 +1,25 @@
+% Theme local de secours pour la presentation A9.
+% Si un theme commun est fourni par le cours, le remplacer par ce fichier.
+\usetheme{Madrid}
+\usecolortheme{default}
+\definecolor{espbleu}{RGB}{0,74,124}
+\definecolor{esporange}{RGB}{197,90,17}
+\definecolor{espvert}{RGB}{84,130,53}
+\setbeamercolor{structure}{fg=espbleu}
+\setbeamercolor{frametitle}{bg=espbleu,fg=white}
+\setbeamercolor{title}{fg=espbleu}
+\setbeamercolor{block title}{bg=espbleu,fg=white}
+\setbeamercolor{block body}{bg=espbleu!5}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.72\paperwidth,ht=2.4ex,dp=1.2ex,leftskip=.3cm]{author in head/foot}%
+      \usebeamerfont{author in head/foot}Groupe 3 --- A9 Consensus BFT
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.28\paperwidth,ht=2.4ex,dp=1.2ex,rightskip=.3cm plus1fil]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertframenumber/\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+  \vskip0pt%
+}

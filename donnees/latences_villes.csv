@@ -1,0 +1,11 @@
+noeud,universite,ville,retard_aller_ms,gigue_ms,commentaire
+node0,UCAD,Dakar,10,2,reference Senegal
+node1,UGB,Saint-Louis,15,2,reseau universitaire
+node2,Universite Ki-Zerbo,Ouagadougou,40,5,Burkina Faso
+node3,Universite Houphouet-Boigny,Abidjan,35,5,Cote d'Ivoire
+node4,Universite de Bamako,Bamako,40,5,Mali
+node5,Universite de Niamey,Niamey,45,5,Niger
+node6,Universite de Lome,Lome,35,5,Togo
+node7,Universite de Cotonou,Cotonou,35,5,Benin
+node8,Universite de Bissau,Bissau,20,3,Guinee-Bissau
+node9,Universite de Ziguinchor,Ziguinchor,15,2,Casamance
